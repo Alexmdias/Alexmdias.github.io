@@ -4104,6 +4104,7 @@ label{
   .popup .close:hover {
     color: #001483;
   }
+  
   .popup .content {
     max-height: 30%;
     overflow: auto;

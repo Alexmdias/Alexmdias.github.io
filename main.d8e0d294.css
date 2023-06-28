@@ -4130,6 +4130,10 @@ label{
     height: auto   !important;
     float:left;
   }
+  img.planet {
+    /* override other styles to make responsive */
+    max-width: 40%    !important;
+  }
   video.ducker {
     /* override other styles to make responsive */
     width: 40%    !important;

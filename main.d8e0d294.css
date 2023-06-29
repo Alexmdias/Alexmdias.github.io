@@ -4118,7 +4118,9 @@ label{
       width: 70%;
     }
   }
-
+  .content{
+    text-align: justify;
+  }
   video.webgl {
     /* override other styles to make responsive */
     width: 32%    !important;

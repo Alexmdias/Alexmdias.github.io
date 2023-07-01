@@ -4172,7 +4172,14 @@ img{
     max-width: 100%;
     height: auto;
 }
-
+.neurcent{
+    text-align: center;
+}
+.neur{width: 30%;}
+.duckcent{
+    text-align: center;
+}
+.ducker{width: 40%;}
 .profile{position:relative;
     min-height:1px;
     padding-left:15px;

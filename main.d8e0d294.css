@@ -217,11 +217,11 @@ button,input,select,textarea{
     line-height:inherit
 }
 a{
-    color:#ff0060;
+    color:#6a92ff;
     text-decoration:none
 }
 a:focus,a:hover{
-    color:#b30043;
+    color:#0042d1;
     text-decoration:underline
 }
 a:focus{
@@ -4187,3 +4187,16 @@ float:left;}
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;}
+
+#biglink1 h2{
+    color:#94b0ff;
+}
+#biglink1 h2:hover{
+    color:#0051ff;
+}
+#biglink2 h3{
+    color:#94b0ff;
+}
+#biglink2 h3:hover{
+    color:#0051ff;
+}

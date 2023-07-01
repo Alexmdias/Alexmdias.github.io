@@ -4172,3 +4172,9 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+.profile{position:relative;
+    min-height:1px;
+    padding-left:15px;
+    padding-right:15px;
+float:left;}

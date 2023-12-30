@@ -4157,7 +4157,7 @@ label{
     width: 32%    !important;
     height: auto   !important;
   }
-#pano video.geovid {
+  video.pano {
     /* override other styles to make responsive */
     width: 80%    !important;
     height: auto   !important;
@@ -4167,6 +4167,9 @@ label{
     text-align: center;
   }
   #arap1{
+    width: 50%;
+    text-align: center;}
+#pano1{
     width: 50%;
     text-align: center;}
   #planet1{

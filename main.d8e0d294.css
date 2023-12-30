@@ -4157,6 +4157,11 @@ label{
     width: 32%    !important;
     height: auto   !important;
   }
+#pano video.geovid {
+    /* override other styles to make responsive */
+    width: 80%    !important;
+    height: auto   !important;
+  }
   #subdiv1, #heat1, #pano1{
     width: 70%;
     text-align: center;

@@ -55,8 +55,11 @@
               </div>
               <div class="col-md-8">
 
-              <p>I am a Canadian software developer living in Quebec, specializing in <b>Computer Graphics</b>, using technologies such as <b>OpenGL, WebGL, Vulkan, GLSL, LibiGL, Skia</b> and more. I program mainly in <b>C++</b> and <b>Python</b>, but I am also familiar with <b>Javascript, HTML/CSS, C#, Assembly and bash scripting in UNIX</b>. I also have knowledge in the field of <b>Artificial Intelligence</b>, mainly in <b>Computer Vision using OpenCV and PyTorch.</b></p>
-              <p>In my spare time, I am a visual artist you can see some of my work <a href="https://www.artstation.com/crows">here.</a></p>
+              <p>I am a Canadian software developer living in Montreal, specializing in <b>Computer Graphics</b>.</br> The main tools I use for personal or professional projects are 
+                <b>Vulkan, Unity, WebGL, GLSL, OpenGL, LibiGL, Skia, Renderdoc, Imgui </b>and more. I program mainly in <b>C++</b> , <b>C#</b> and <b>Python</b>,
+                 but I am also familiar with <b>Javascript, HTML/CSS, C, Assembly and bash scripting in UNIX</b>. 
+                 I also have knowledge in the field of <b>Artificial Intelligence</b>, mainly in <b>Computer Vision using OpenCV and PyTorch.</b> Regardless of my specialties, I'm open to all roles related to software development!</p>
+              <p>In my spare time, I am a visual artist you can see some of my work <a href="https://www.artstation.com/crows">here.</a> </p>
 
               </div>
             </div>
@@ -85,6 +88,49 @@
         </div>
         <div id="planet" class="overlay">
           <div id="planet1" class="popup">
+            <h2>Procedural Planet</h2>
+            <video class="planet" poster="video.jpg" preload="auto" controls autoplay loop>
+              <source src="./assets/planet.webm" type="video/webm">
+            </video>
+            <a href="./assets/procedural planet article.pdf" target=”_blank”>
+              <img class="planet" src="./assets/paper.jpg" class="img-responsive" alt="" >
+            </a>
+            <a class="close" href="#rendering">&times;</a>
+            <div class="content">
+              Inspired by Space Engine’s planet generation, I worked on a large project to research and I wrote an article about the procedural generation of planets. After following a shaders programming class, I wrote a pure fragment shader in <b>GLSL</b> that generates a planet using a variety of techniques such as multi-layered noise functions, color mapping, bump mapping and local illumination. In the end, I have a total of nine global variables a user can manipulate to shape the planet to their liking. 
+              <br/><br/>Check out the project <a href="https://github.com/Alexmdias/ProceduralPlanet"target=”_blank”>here</a>, or read the article I wrote <a href="./assets/procedural planet article.pdf"target=”_blank”>here.</a>
+            </div>
+          </div>
+        </div>
+        <div id="asteroid" class="overlay">
+          <div id="arap1" class="popup">
+            <h2>High-performance mass-instancing</h2>
+            <video class="asteroid" poster="video.jpg" preload="auto" controls autoplay loop>
+              <source src="./assets/asteroid.webm" type="video/webm">
+            </video>
+            <a class="close" href="#rendering">&times;</a>
+            <div class="content">
+              I worked on my master's thesis within Comsographic Software, the company behind <a href="https://spaceengine.org/" target=”_blank”>Space Engine</a>. The goal of my thesis was to implement a high-performance mass-instancing system in <b>Vulkan</b> for Space Engine. The method I implemented is capable of rendering millions of objects thanks for a combination of modern computer graphics techniques, and an original billboarding system that simulates 3D rotations from any view orientation.
+            </br></br><b> You can read more about it in my article <a href="./assets/thesis.pdf"target=”_blank”>here.</a></b>
+            </div>
+          </div>
+        </div>
+        <div id="frustum" class="overlay">
+          <div id="arap1" class="popup">
+            <h2>Voxel-based multithreaded frustum culling</h2>
+            <video class="frustum" poster="video.jpg" preload="auto" controls autoplay loop>
+              <source src="./assets/frustum.webm" type="video/webm">
+            </video>
+            <a class="close" href="#rendering">&times;</a>
+            <div class="content">
+              While working on <a href="talesofwar.com"target=”_blank”>Tales Of War</a>, I implemented a frustum culling system to improve performance on large maps. Since the game is voxel based, I used a Bounding Volume Hierarchy (BVH) on groups of voxel chunks to iterate faster on them, it is multithreaded. I also implemented a visual debugging tool for it as shown in the video above.
+            </div>
+          </div>
+        </div>
+
+
+<div id="vulk" class="overlay">
+          <div id="planet1" class="popup">
             <h2>Vulkan conversions</h2>
             <video class="planet" poster="video.jpg" preload="auto" controls autoplay loop>
               <source src="./assets/planetvulkan.webm" type="video/webm">
@@ -92,11 +138,12 @@
               <img class="planet" src="./assets/texmonkey.jpg" class="img-responsive" alt="" >
             <a class="close" href="#rendering">&times;</a>
             <div class="content">
-              Still a work in progress, I am learning Vulkan using the modern <a href="https://vkguide.dev/">VkGuide</a> engine tutorial. As I program a vulkan engine from scratch, I am also progressively converting some of my WebGL and OpenGL projects into it.
-              <br/>Check out the project <a href="https://github.com/Alexmdias/Vulkan_from_scratch"target=”_blank”>here</a>
+              To learn Vulkan better, I converted a bunch of my webgl projects into vulkan. I also follow <a href="https://vkguide.dev/">VkGuide</a> engine tutorial as I program a vulkan engine from scratch.
+              Check out the project <a href="https://github.com/Alexmdias/Vulkan_from_scratch"target=”_blank”>here</a>
             </div>
           </div>
         </div>
+
         <div id="ray" class="overlay">
           <div id="ray1" class="popup">
             <h2>Raytracer</h2>
@@ -180,30 +227,64 @@
             </video>
             <a class="close" href="#ai">&times;</a>
             <div class="content">
-              This is a <b>Computer Vision</b> project programmed in <b>WebGL and GLSL</b> implementing Optical Flow in real time.
+              Third one is <b>Computer Vision</b> project programmed in <b>WebGL and GLSL</b> implementing Optical Flow in real time.
               <br />Source code <a href="https://github.com/Alexmdias/Flux-Optique"target=”_blank”>here.</a>
             </div>
           </div>
         </div>
         <div id="neur" class="overlay">
-          <div id="neur1" class="popup">
-            <h2>Image classification using a convolutional neural network</h2>
+          <div id="ray1" class="popup">
+            <h2>Miscellaneous Computer Vision Projects</h2>
             <div class="neurcent">
-            <img class="neur" src="./assets/alexnet.jpg" class="img-responsive" alt="" >
-            <img class="neur" src="./assets/torch.jpg" class="img-responsive" alt="" >
+            <img class="ray" src="./assets/curves.jpg" class="img-responsive" alt="" >
+            <img class="ray" src="./assets/pano.jpg" class="img-responsive" alt="" >
+            <img class="ray" src="./assets/neru.jpg" class="img-responsive" alt="" >
             </div>
             <a class="close" href="#ai">&times;</a>
             <div class="content">
-              This is a <b>Computer Vision</b> project programmed in <b>Python</b> to recognize and classify certain animals in their respective category, using <b>Torchvision's Convolutional Neural Networks</b> and <b>PyTorch</b>. Includes small statistical studies of different machine learning methods.
-              <br />Source code <a href="https://github.com/Alexmdias/Convolutional-neural-network"target=”_blank”>here.</a>
+              <br/><a href="https://github.com/Alexmdias/curvature-detection"target=”_blank”>The first project</a> is an image-processing project written in C++ and is about detecting curvature in images. See also pdf of presentation <a href="./assets/curves.pdf"target=”_blank”>here.</a>
+              <br/><a href="https://github.com/Alexmdias/Panorama"target=”_blank”>The second project</a> is programmed in python to to combine pictures together to create a panorama using OpenCV and Numpy. </br>It uses a variety of computer vision techniques such as feature detection, image stitching, and homography.
+              <br/><a href="https://github.com/Alexmdias/Convolutional-neural-network"target=”_blank”>The third project</a> is programmed in <b>Python</b> to recognize and classify certain animals in their respective category, using <b>Torchvision's Convolutional Neural Networks</b> and <b>PyTorch</b>. Includes small statistical studies of different machine learning methods.
+
             </div>
           </div>
         </div>
 
         <div class="card">
           <div class="card-block">
-            <h2>Rendering and Shader Programming Projects</h2>
+            <h2>Real-Time Rendering Projects</h2>
             <div class="row">
+<div class="col-md-4">
+                <a href="#asteroid" name="rendering">
+                <img src="./assets/asteroid.jpg" class="img-responsive" alt="">
+                <h3 class="h5">High-performance mass-instancing</h3>
+                </a>
+                <p>A large vulkan-based project I worked on during my time working on Space Engine</p>
+              </div>
+              
+
+              <div class="col-md-4">
+                <a href="#planet" name="rendering">
+                <img src="./assets/planet.jpg" class="img-responsive" alt="">
+                <h3 class="h5">Procedural Planet</h3>
+                </a>
+                <p>A shader project with an article I wrote</p>
+              </div>
+              
+              <div class="col-md-4">
+                <a href="#frustum" name="rendering">
+                <img src="./assets/frustum.jpg" class="img-responsive" alt="">
+                <h3 class="h5">Voxel-based multithreaded culling</h3>
+                </a>
+                <p>Frustum culling system I implemented for the voxel-based game Tales of War</p>
+              </div>
+            </div>
+	
+
+          </br>
+
+
+	          <div class="row">
               <div class="col-md-4">
                 <a href="#webgl" name="rendering">
                 <img src="./assets/shade.jpg" class="img-responsive" alt="">
@@ -212,20 +293,23 @@
                 <p>A collection of WebGL projects programmed in ThreeJS and GLSL</p>
               </div>
               <div class="col-md-4">
-                <a href="#planet" name="rendering">
-                <img src="./assets/fullscene.png" class="img-responsive" alt="">
-                <h3 class="h5">Vulkan conversions</h3>
-                </a>
-                <p>Converting a bunch of my projects into Vulkan</p>
-              </div>
-              <div class="col-md-4">
                 <a href="#ray" name="rendering">
                 <img src="./assets/ray.jpg" class="img-responsive" alt="">
                 <h3 class="h5">Raytracer</h3>
               </a>
-                <p>Classic Raytracer in C++</p>
+                <p>Classic Raytracer in C++. Not in real-time!</p>
+              </div>
+              
+                   <div class="col-md-4">
+                <a href="#vulk" name="rendering">
+                <img src="./assets/fullscene.png" class="img-responsive" alt="">
+                <h3 class="h5">Vulkan conversions</h3>
+                </a>
+                <p>Converting my projects into Vulkan</p>
               </div>
             </div>
+
+
           </div>
         </div>
         <div class="card">
@@ -271,14 +355,14 @@
                 <a href="#pano" name="ai">
                   <img src="./assets/flow.png" class="img-responsive" alt="">
                   <h3 class="h5">Real Time Optical Flow</h3></a>
-                  <p>Visualization of the direction of motion all in real time</p>
+                  <p>Visualization of the direction of motion all in real time using the GPU</p>
                   
               </div>
               <div class="col-md-4">
                 <a href="#neur" name="ai">
                   <img src="./assets/neural.jpg" class="img-responsive" alt="">
-                  <h3 class="h5">Image classification</h3></a>
-                  <p>Image classification using Convolutional Neural Networks (CNN) in PyTorch</p>
+                  <h3 class="h5">Misc. Computer Vision projects</h3></a>
+                  <p>Includes Convolutional Neural Networks in PyTorch, panoramas, and curvature detection</p>
                   
               </div>
             </div>
@@ -319,16 +403,38 @@
         <div class="card">
           <div class="card-block">
             <h2>Work</h2>
+
             <div class="work-experience">
-              <small class="date">2024-present</small>
-              <h3 class="h5 date-title">Vulkan graphics developer - <a href="https://spaceengine.org/" target=”_blank”>Cosmographic Software</a></h3>
-              <p>I am currently employed to work on <a href="https://spaceengine.org/" target=”_blank”>Space Engine</a>, an interactive universe simulator with highly advanced procedural generation techniques and graphics capabilities based on real, accurate astrophysics.</p>
+              <small class="date">2025</small>
+              <h3 class="h5 date-title">Unity Graphics Developer - <a href="https://talesofwar.com/" target=”_blank”>Tales of War</a></h3>
+              <p>I was contracted to work on <a href="https://talesofwar.com/" target=”_blank”>Tales Of War</a>, an upcoming 100 players multiplayer game. My work involved profiling and optimizing the unity game for low-end hardware on a variety of platforms. I mainly programmed in <b>C# and GLSL</b>.</p> 
+              <p>
+</br>• Used renderdoc to identify and explain slowdowns to other developpers
+</br>• Implemented BVH Frustum Culling on Voxel-based terrain, multithreaded on the CPU
+</br>• Implemented various visual debugging tools to help other developpers
+</br>• Worked on a Cached Shadowmaps rendering feature 
+</br>• Wrote custom simple GLSL lighting shader adapted to game's desired art style
+
+              </p>
+            </div>
+
+            <div class="work-experience">
+              <small class="date">2024</small>
+              <h3 class="h5 date-title">Vulkan Graphics Developer - <a href="https://spaceengine.org/" target=”_blank”>Cosmographic Software</a></h3>
+              <p>I was contracted to work on <a href="https://spaceengine.org/" target=”_blank”>Space Engine</a>, an interactive universe simulator with highly advanced procedural generation techniques and graphics capabilities based on real, accurate astrophysics. I programmed in <b>C++ and GLSL, using Vulkan</b>.</p>
+                          <p>
+</br>• Worked on an RHI in Vulkan
+</br>• Implementeda variety of Vertex and Fragment shaders, both in forward and deferred rendering
+</br>• Implemented and synchronized Compute Shaders to deffer work from the CPU to the GPU
+</br>• Implemented various computer graphics techniques : PBR materials, GPU frustum culling, LOD, Billboarding, Texture Atlases, and some more.
+
+              </p>
             </div>
             
             <div class="work-experience">
               <small class="date">2022-2023</small>
-              <h3 class="h5 date-title">C++ graphics R&D developer - <a href="https://www.corel.com/en/" target=”_blank”>Corel Corporation</a></h3>
-              <p>Employed to work on the CorelDraw graphics suite. I was tasked with developing typography technology with the <b>Skia graphics engine</b> and <b>WebAssembly</b>. It required understanding of vector graphics, language encoding, font encoding and glyph rendering.</p>
+              <h3 class="h5 date-title">C++ Graphics R&D Developer - <a href="https://www.corel.com/en/" target=”_blank”>Corel Corporation</a></h3>
+              <p>Employed to work on the CorelDraw graphics suite. I was tasked with developing typography technology with the <b>Skia graphics</b> and <b>WebAssembly</b>. It required understanding of vector graphics, language encoding, font encoding and glyph rendering. I programmed in<b> C++ and javascript</b>.</p>
             </div>
 
             <div class="work-experience">
@@ -355,7 +461,7 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="education-experience">
-                  <small class="date">2022-2024</small>
+                  <small class="date">2022-2024 (thesis in 2025)</small>
                   <h3 class="h5 date-title">Masters of Computer Science</h3>
                   <p>University of Montreal <br>Graduated with Cum Laude distinction <br>Computer Graphics and Computer Vision</p>
                 </div>
